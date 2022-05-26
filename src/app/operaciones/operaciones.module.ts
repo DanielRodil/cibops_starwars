@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { OperacionesRoutingModule } from './operaciones-routing.module';
 import { OperacionesComponent } from './operaciones/operaciones.component';
 import { OperacionItemComponent } from './operacion-item/operacion-item.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { OperacionItemComponent } from './operacion-item/operacion-item.componen
   ],
   imports: [
     CommonModule,
-    OperacionesRoutingModule
+    OperacionesRoutingModule,
+    FormsModule
   ]
 })
 export class OperacionesModule { }
