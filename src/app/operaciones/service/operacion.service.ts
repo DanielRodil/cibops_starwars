@@ -24,8 +24,8 @@ export class OperacionService {
 
   extraerOperaciones(respuestaApi: any): Operacion[] {
     const operaciones: Operacion[] = [];
-    respuestaApi.results.forEach((o: any) => {
-      operaciones.push(this.mapearOperacion(o));
+    respuestaApi._embedded.operaciones.forEach((p: any) => {
+      operaciones.push(this.mapearOperacion(p));
 
     });
     return operaciones;

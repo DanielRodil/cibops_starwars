@@ -23,6 +23,12 @@ export class OperacionesComponent implements OnInit {
               private auxService: AuxiliarService) { }
 
   ngOnInit(): void {
+      this.operacionService.getOperaciones().subscribe((response) => this.operaciones =
+      this.operacionService.extraerOperaciones(response));
+      this.getTodasOperaciones();
+  }
+
+  getTodasOperaciones(): void {
     this.operacionService.getOperaciones().subscribe(r => {
       this.numpaginas = this.auxService.getPaginasResponse(r);
       for (let index = 1; index <= this.numpaginas; index++) {

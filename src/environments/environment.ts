@@ -1,5 +1,5 @@
 export const environment = {
-  production: false,
+  production: true,
   logo: '../assets/tituloCIBOPS.png',
   imagenATEC: '../assets/ATEC.png',
   host: 'https://cibops.herokuapp.com/api/',
