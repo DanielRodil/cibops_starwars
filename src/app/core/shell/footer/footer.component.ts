@@ -7,6 +7,7 @@ import { faEnvelopeCircleCheck, } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {
+
   faEnvelopeCircleCheck = faEnvelopeCircleCheck;
 
   constructor() { }
