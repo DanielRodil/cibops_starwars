@@ -6,12 +6,14 @@ import { OperacionesComponent } from './operaciones/operaciones.component';
 import { OperacionItemComponent } from './operacion-item/operacion-item.component';
 import { FormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { OperacionFormComponent } from './operacion-form/operacion-form.component';
 
 
 @NgModule({
   declarations: [
     OperacionesComponent,
-    OperacionItemComponent
+    OperacionItemComponent,
+    OperacionFormComponent
   ],
   imports: [
     CommonModule,

@@ -36,8 +36,8 @@ export class OperacionService {
     );
   }
 
-  create(operacion: Operacion): void {
-    console.log(`Se ha creado la operacion ${JSON.stringify(operacion)}`)
+  createOp(operacion: Operacion): Observable<any> {
+    return this.http.post(`${this.urlEndPoint}`, operacion);
   }
 
 }
