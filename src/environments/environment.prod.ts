@@ -3,5 +3,4 @@ export const environment = {
   logo: '../assets/tituloCIBOPS.png',
   imagenATEC: '../assets/ATEC.png',
   host: 'https://cibops.herokuapp.com/api/',
-  itemsPorPagina: 10
 };
