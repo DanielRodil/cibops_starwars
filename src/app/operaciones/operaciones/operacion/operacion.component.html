@@ -4,7 +4,7 @@
 <form action="/action_page.php" class="was-validated">
   <div class="mb-3 mt-3">
       <label class="form-label">Nombre:</label>
-      <input type="text" class="form-control" id="nombreOperacion"
+      <input type="text" class="form-control" id="nombreOperacion" name="nombreOperacion"
           [(ngModel)]="operacion.nombre" readonly>
   </div>
 
@@ -23,6 +23,6 @@
   <div class="mb-3">
     <label class="form-label">Fecha Cierre:</label>
     <input type="date" class="form-control" id="fechaCierre" name="fechaCierre"
-          [(ngModel)]="operacion.fechaCierre" readonly>
+        [(ngModel)]="operacion.fechaCierre" readonly>
   </div>
 </form>
