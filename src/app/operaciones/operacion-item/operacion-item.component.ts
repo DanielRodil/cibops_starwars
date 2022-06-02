@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Operacion } from '../models/operacion';
 import { OperacionImpl } from '../models/operacion-impl';
 import { faMagnifyingGlass, faPencil, faTrashCan } from '@fortawesome/free-solid-svg-icons';
@@ -16,6 +16,7 @@ export class OperacionItemComponent implements OnInit {
   faTrashCan = faTrashCan;
 
   @Input() operacion: Operacion = new OperacionImpl("", "", "", "");
+  @Output() operacionSeleccionada = new EventEmitter<Operacion>();
 
   constructor() { }
 

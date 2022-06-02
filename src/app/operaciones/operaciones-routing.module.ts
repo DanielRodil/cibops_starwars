@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { OperacionFormComponent } from './operacion-form/operacion-form.component';
+import { OperacionComponent } from './operaciones/operacion/operacion.component';
 import { OperacionesComponent } from './operaciones/operaciones.component';
 
 const routes: Routes = [

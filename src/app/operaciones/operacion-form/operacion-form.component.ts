@@ -18,9 +18,7 @@ export class OperacionFormComponent implements OnInit {
   }
 
   altaOp(): void {
-    this.operacionService.createOp(this.operacion).subscribe((response) => {
-      this.router.navigate(['/operaciones']);
-    });
+    this.operacionService.createOp(this.operacion).subscribe();
   }
 
 }

@@ -6,7 +6,7 @@
         <li class="list-group-item">{{ operacion.nombre }}</li>
       </div>
       <div class="col-1">
-        <a href="#">
+        <a class="" data-bs-toggle="modal" data-bs-target="#modalOperacion" (click)="operacionSeleccionada.emit(operacion)">
           <fa-icon [icon]="faMagnifyingGlass" class="fa-2x"></fa-icon>
         </a>
       </div>
