@@ -15,7 +15,7 @@ export class OperacionItemComponent implements OnInit {
   faPencil = faPencil;
   faTrashCan = faTrashCan;
 
-  @Input() operacion: Operacion = new OperacionImpl("", "");
+  @Input() operacion: Operacion = new OperacionImpl("", "", "", "");
 
   constructor() { }
 

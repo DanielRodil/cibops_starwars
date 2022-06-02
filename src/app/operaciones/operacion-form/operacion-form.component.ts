@@ -10,7 +10,7 @@ import { OperacionService } from '../service/operacion.service';
   styleUrls: ['./operacion-form.component.css']
 })
 export class OperacionFormComponent implements OnInit {
-  operacion: Operacion = new OperacionImpl ("", "");
+  operacion: Operacion = new OperacionImpl ("", "", "", "");
 
   constructor(private operacionService: OperacionService, private router: Router) { }
 

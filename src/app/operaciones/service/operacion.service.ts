@@ -32,7 +32,9 @@ export class OperacionService {
   mapearOperacion(operacionApi: any): OperacionImpl {
     return new OperacionImpl(
       operacionApi.nombre,
-      operacionApi.descripcion
+      operacionApi.descripcion,
+      operacionApi.fechaApertura,
+      operacionApi.fechaCierre
     );
   }
 
